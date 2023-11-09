@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'PokemonFont'; /* Define a name for the font */
+    src: url('../fonts/PokemonHollowNormal-pyPZ.ttf') format('woff'); /* Path to the font file */
+}
+
+.home-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.homepage-content-box {
+    display: flex;
+    height: 100%;
+}
+
+.list-content {
+    flex: 1;
+    padding: 20px; 
+    padding-bottom: 50px;
+    height: 800px;
+    border: 2px solid black;
+  }
+  
+.display-content {
+    flex: 1; 
+    padding: 200px;
+    align-items: center;
+    height: 200px;
+    border: 2px solid rgb(214, 67, 67);
+}
+
+
+.bg-image {
+    background-image: url('../images/pk.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.pokemon-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    overflow-x: auto; 
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-left: 20px;
+    scrollbar-color: transparent transparent; 
+}
+
+
+.pokemon-list::-webkit-scrollbar {
+    width: 1px; 
+}
+
+.pokemon-list::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+  .pokemon-info {
+    background: rgba(255, 255, 255, 0.5); 
+    box-shadow: 2px 4px 10px 2px rgba(198, 196, 196, 0.25);
+    color: rgb(12, 11, 11);
+    width: 30vw;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;  
+    min-width: 160px;
+    transition: background 0.3s, transform 0.2s; /* Adding transitions for hover effect */
+  }
+  
+  .pokemon-info:hover {
+    background: rgba(255, 255, 255, 0.8); /* Adjust the alpha value (0.8) for hover transparency */
+    transform: scale(1.06); /* Adding a scale effect on hover */
+  }
+  
+  
+.pokemon-name{
+    flex: 1;
+    font-family: 'PokemonFont';
+    font-size: 30px;
+}
+
+.pokemon-id{
+    font-family: 'PokemonFont';
+    font-size: 30px;
+    flex: 1;
+   
+}
+
+.pokemon-image {
+    flex: 1;
+    height: 100px;
+    width: 100px;
+}
+
