@@ -1,43 +1,37 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: center; /* Center the navbar horizontally */
+  align-items: center;
+  margin-top: 10px;
 }
 
 .nav-link {
     font-family: 'PokemonFont', sans-serif;
-    background: linear-gradient(180deg, #000, #333);
-    color: white;
-    border: 1px solid #000;
+    background: radial-gradient(circle, #dddcd5 0%, #ffb574 100%); 
+    color: rgb(31, 30, 30);
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 25px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    flex: 1; /* Distribute links equally in available space */
-
-    /* 3D effect */
+    width: 200px;
+    height: 50px;
     transform: translateZ(0);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    margin-right: 20px;
 }
 
-.nav-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-    background: linear-gradient(180deg, #333, #000);
-}
 
 .active {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-    background: linear-gradient(180deg, #333, #000);
-    font-weight: bold; /* Make the active item bold */
+    background: linear-gradient(180deg, #bab9b9, #f3c196);
+    font-weight: bold;
   }
 
 .nav-link a {
     font-family: 'PokemonFont', sans-serif;
     text-decoration: none;
-    color: #efe8e8;
-    font-size: 28px;
+    color: #0d0c0c;
+    font-size: 25px;
 }

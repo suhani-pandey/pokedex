@@ -29,8 +29,9 @@
     
     
     .bg-image {
-        background-image: url('../images/pk.jpg');
+        background-image: url('../images/forest.jpg');
         background-size: cover;
+        opacity: 1;
         position: fixed;
         top: 0;
         left: 0;
@@ -62,18 +63,17 @@
     }
 
     .button-content {
-        background: linear-gradient(180deg, #a7a4a4, #1c1c1c);
-        color: white;
-        border: 2px solid #726d6d;
+      background: radial-gradient(circle, #eae8df 0%, #f7d6b9 100%); 
+        color: rgb(15, 14, 14);
+        font-weight: bold;
         text-align: center;
         border-radius: 10px;
         font-family: 'PokemonFont', sans-serif;
-        font-size: 18px;
+        font-size: 25px;
         cursor: pointer;
         transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
         transform: translateZ(0);
         width: 200px;
-        box-shadow: 0 2px 5px 0 rgba(237, 116, 116, 0.25);
         margin-left: 20px;
         margin-top: 10px;
         
@@ -82,13 +82,13 @@
 
     .button-content:hover {
         transform: translateY(-2px);
-        box-shadow: 0 4px 10px 0 rgba(199, 51, 51, 0.25);
-        background: linear-gradient(180deg, #4b4b4b, #161010);
+        box-shadow: 0 4px 10px 0 rgba(28, 28, 28, 0.25);
+        background: linear-gradient(180deg, #eae8df 0%, #d9b391 100%);
         font-weight: bold;
     }
 
     .pokemon-info {
-      background-image: linear-gradient(to right, rgba(229, 218, 218, 9), rgba(255,0,0,0)); 
+      background-image: linear-gradient(to right, rgba(229, 218, 218, 2), rgba(255,0,0,0)); 
       opacity: 0.8;
       box-shadow: 2px 4px 10px 2px rgba(198, 196, 196, 0.25);
       color: rgb(12, 11, 11);
@@ -212,14 +212,14 @@
   
   
   .INFO{
-    border: 2px solid ;
+    background-image: linear-gradient(to top, rgba(229, 218, 218, 9), rgba(255,0,0,0)); 
     height: 500px;
     width: 500px;
     border-radius: 10px;
     margin-left: 90px;
     margin-top: 30px;
-    background-color: rgb(186, 186, 186);
-    box-shadow: 0 0 20px rgba(6, 6, 6, 0.5);
+    box-shadow: 0 0 20px rgba(7, 0, 0, 0.5);
+    opacity: 0.9;
   }
 
   .INFO:hover{

@@ -13,7 +13,7 @@
 }
 
 .background-image {
-    background-image: url('../images/fp.jpg');
+    background-image: url('../images/jdk.jpg');
     background-size: cover;
     position: fixed;
     top: 0;
@@ -27,26 +27,43 @@
 .button-container {
     display: flex;
     justify-content: center; /* Center horizontally */
-    margin-top: 37%; /* Adjust this value to control the distance from the bottom */
+    margin-top: 35%; /* Adjust this value to control the distance from the bottom */
 }
 
 .fancy-button {
-    background: linear-gradient(180deg, #000, #333); /* Black to dark gray gradient */
-    color: white; /* Text color */
-    border: 1px solid #000; /* Black border */
+    background: linear-gradient(180deg, #f1faee, #f3eeee); /* Black to dark gray gradient */
+    color: rgb(7, 6, 6); /* Text color */
     padding: 10px 50px;
     border-radius: 10px;
     font-family: 'PokemonFont', sans-serif;
     font-size: 30px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease; 
+    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
     transform: translateZ(0);
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-}
-
-.fancy-button:hover {
+    position: relative; /* Added to handle the lighting effect */
+  }
+  
+  .fancy-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: radial-gradient(circle, #ffcb05 0%, #f57f17 100%); /* Pokemon yellow to orange gradient */
+    z-index: -1;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Fade in/out effect */
+  }
+  
+  .fancy-button:hover:before {
+    opacity: 1; /* Show the lighting effect on hover */
+  }
+  
+  .fancy-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-    background: linear-gradient(180deg, #333, #000);
-}
-
+    background: linear-gradient(180deg, #cfcfcf, #f1faee);
+  }
+  
