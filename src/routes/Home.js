@@ -118,7 +118,7 @@ export default function Home() {
 }
 
 function QueryComponent({ onPokemonClick, currentPage }) {
-  const limit = 4;
+  const limit = 5;
   const offset = (currentPage - 1) * limit;
 
   const pokemonInfo = useQuery({
