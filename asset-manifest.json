@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pokedex/static/css/main.6979f45f.css",
-    "main.js": "/pokedex/static/js/main.e35108e5.js",
+    "main.css": "/pokedex/static/css/main.4900280d.css",
+    "main.js": "/pokedex/static/js/main.df91c101.js",
     "static/media/charizard.gif": "/pokedex/static/media/charizard.4a3a9bf3987d5d872811.gif",
     "static/media/butterfree-f.gif": "/pokedex/static/media/butterfree-f.d602f8addc34fdb199cc.gif",
     "static/media/fp.jpg": "/pokedex/static/media/fp.15815acb10c8e26b6118.jpg",
@@ -9,11 +9,11 @@
     "static/media/PokemonHollowNormal-pyPZ.ttf": "/pokedex/static/media/PokemonHollowNormal-pyPZ.47f77ce9939c5330492b.ttf",
     "static/media/PokemonGb-RAeo.ttf": "/pokedex/static/media/PokemonGb-RAeo.6211ee48ea626f34681e.ttf",
     "index.html": "/pokedex/index.html",
-    "main.6979f45f.css.map": "/pokedex/static/css/main.6979f45f.css.map",
-    "main.e35108e5.js.map": "/pokedex/static/js/main.e35108e5.js.map"
+    "main.4900280d.css.map": "/pokedex/static/css/main.4900280d.css.map",
+    "main.df91c101.js.map": "/pokedex/static/js/main.df91c101.js.map"
   },
   "entrypoints": [
-    "static/css/main.6979f45f.css",
-    "static/js/main.e35108e5.js"
+    "static/css/main.4900280d.css",
+    "static/js/main.df91c101.js"
   ]
 }
