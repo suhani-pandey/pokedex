@@ -29,7 +29,7 @@
     
     
     .bg-image {
-        background-image: url('../images/forest.jpg');
+      background-image: url('../images/pk.jpg');
         background-size: cover;
         opacity: 1;
         position: fixed;
@@ -63,8 +63,8 @@
     }
 
     .button-content {
-      background: radial-gradient(circle, #eae8df 0%, #f7d6b9 100%); 
-        color: rgb(15, 14, 14);
+      background: linear-gradient(circle, #242424, #908f8f);; 
+        color: rgb(21, 21, 21);
         font-weight: bold;
         text-align: center;
         border-radius: 10px;
